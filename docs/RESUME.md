@@ -9,7 +9,7 @@
       <span><span class="label">年齢</span> 40歳</span>
       <span><span class="label">性別</span> 男性</span>
       <span><span class="label">配偶者</span> 有</span>
-      <span><span class="label">学歴</span> 湖西大学校 パソコン工学 卒業</span>
+      <span><span class="label">学歴</span> 湖西大学校<br>パソコン工学 卒業</span>
     </div>
   </div>
 </div>
