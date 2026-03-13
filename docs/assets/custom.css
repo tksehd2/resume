@@ -93,13 +93,21 @@ body {
 
 .skill-tags .tag {
   display: inline-block;
-  padding: 4px 14px;
+  padding: 5px 16px;
   border-radius: 20px;
   font-size: 0.88em;
   font-weight: 500;
   background: #e8f0fe;
   color: #1a56db;
   border: 1px solid #c6dbf7;
+}
+
+.skill-tags .tag.primary {
+  background: linear-gradient(135deg, #1a73e8, #4f46e5);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(26, 115, 232, 0.3);
 }
 
 .skill-tags .tag.secondary {
@@ -249,37 +257,139 @@ body {
 
 /* ===== Responsive ===== */
 @media screen and (max-width: 600px) {
-  .markdown-section {
-    padding: 12px 14px 40px;
+  :root {
+    --base-font-size: 13.5px;
   }
 
+  .markdown-section {
+    padding: 10px 12px 32px;
+    font-size: 0.85em;
+  }
+
+  /* Profile */
   .profile-header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px 16px;
+    padding: 14px 12px;
+    gap: 12px;
+    margin-bottom: 20px;
   }
 
   .profile-header img {
-    width: 120px;
+    width: 90px;
+  }
+
+  .profile-info h1 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  .profile-info {
+    min-width: unset;
   }
 
   .profile-meta {
     grid-template-columns: 1fr;
     text-align: left;
+    font-size: 0.85em;
+    gap: 3px;
   }
 
-  .career-entry {
-    padding: 16px;
+  .profile-meta .label {
+    min-width: 55px;
   }
 
-  .career-meta {
-    flex-direction: column;
-    gap: 4px;
+  /* Skills */
+  .skills-section {
+    margin-bottom: 20px;
+  }
+
+  .skill-category {
+    margin-bottom: 10px;
+  }
+
+  .skill-tags .tag {
+    padding: 2px 10px;
+    font-size: 0.8em;
+  }
+
+  /* Section headings */
+  .markdown-section h2 {
+    font-size: 1.15em;
+  }
+
+  /* Career Summary Table */
+  .career-summary table {
+    font-size: 0.78em;
+  }
+
+  .career-summary th,
+  .career-summary td {
+    padding: 6px 8px;
+  }
+
+  .career-summary td:first-child {
+    white-space: nowrap;
+    font-size: 0.82em;
   }
 
   .career-summary td:nth-child(2) {
     white-space: normal;
+  }
+
+  /* Career Entries */
+  .career-entry {
+    padding: 12px 14px;
+    margin-bottom: 24px;
+  }
+
+  .career-entry h3 {
+    font-size: 1em;
+  }
+
+  .career-entry h4 {
+    font-size: 0.85em;
+    margin: 12px 0 6px;
+  }
+
+  .career-period {
+    font-size: 0.78em;
+    padding: 1px 8px;
+  }
+
+  .career-meta {
+    flex-direction: column;
+    gap: 3px;
+    font-size: 0.8em;
+    margin: 6px 0 10px;
+  }
+
+  .career-meta .badge {
+    font-size: 0.82em;
+    padding: 1px 6px;
+  }
+
+  .career-entry ul {
+    padding-left: 16px;
+    margin: 2px 0 8px;
+  }
+
+  .career-entry li {
+    font-size: 0.88em;
+    line-height: 1.5;
+    margin-bottom: 2px;
+  }
+
+  /* Phases */
+  .phases {
+    gap: 4px;
+    margin-top: 8px;
+  }
+
+  .phases .phase {
+    padding: 2px 7px;
+    font-size: 0.72em;
   }
 }
 
