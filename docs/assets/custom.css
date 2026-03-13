@@ -91,6 +91,25 @@ body {
   border: none;
 }
 
+.skill-category ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.skill-category li {
+  position: relative;
+  padding: 6px 0 6px 16px;
+  line-height: 1.6;
+  font-size: 0.93em;
+  border-left: 3px solid var(--theme-color);
+  margin-bottom: 8px;
+}
+
+.skill-category li strong {
+  color: #1a1a1a;
+}
+
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
