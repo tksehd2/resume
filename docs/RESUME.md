@@ -6,7 +6,7 @@
     <h1><ruby>辛<rp>(</rp><rt>シン</rt><rp>)</rp></ruby>　<ruby>東赫<rp>(</rp><rt>ドンヒョク</rt><rp>)</rp></ruby></h1>
     <div class="profile-meta">
       <span><span class="label">最寄駅</span> 有楽町線 豊洲駅</span>
-      <span><span class="label">年齢</span> 39歳</span>
+      <span><span class="label">年齢</span> 40歳</span>
       <span><span class="label">性別</span> 男性</span>
       <span><span class="label">配偶者</span> 有</span>
       <span><span class="label">学歴</span> 湖西大学校 パソコン工学 卒業</span>
