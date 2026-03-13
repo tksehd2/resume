@@ -208,6 +208,45 @@ body {
   border: 1px solid #a7f3d0;
 }
 
+/* ===== Career Summary Table ===== */
+.career-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.career-summary th {
+  background: #f0f7ff;
+  color: #1a56db;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--theme-color);
+  white-space: nowrap;
+}
+
+.career-summary td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #333;
+  line-height: 1.5;
+}
+
+.career-summary td:first-child {
+  white-space: nowrap;
+  font-size: 0.88em;
+  color: #555;
+}
+
+.career-summary td:nth-child(2) {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.career-summary tr:hover td {
+  background: #f8fafc;
+}
+
 /* ===== Responsive ===== */
 @media screen and (max-width: 600px) {
   .markdown-section {
@@ -237,6 +276,10 @@ body {
   .career-meta {
     flex-direction: column;
     gap: 4px;
+  }
+
+  .career-summary td:nth-child(2) {
+    white-space: normal;
   }
 }
 
