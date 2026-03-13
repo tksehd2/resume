@@ -1,0 +1,250 @@
+/* ===== Global ===== */
+:root {
+  --theme-color: #1a73e8;
+  --base-font-size: 16px;
+  --base-line-height: 1.7;
+  --content-max-width: 860px;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
+}
+
+.markdown-section {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 20px 24px 60px;
+}
+
+/* ===== Profile Header ===== */
+.profile-header {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f0fe 100%);
+  border-radius: 12px;
+  border-left: 4px solid var(--theme-color);
+}
+
+.profile-header img {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.profile-info h1 {
+  margin: 0 0 12px 0;
+  font-size: 1.6em;
+  border: none;
+  color: #1a1a1a;
+}
+
+.profile-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 6px 24px;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.profile-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-meta .label {
+  font-weight: 600;
+  color: #333;
+  min-width: 70px;
+}
+
+/* ===== Skill Tags ===== */
+.skills-section {
+  margin-bottom: 32px;
+}
+
+.skill-category {
+  margin-bottom: 16px;
+}
+
+.skill-category h3 {
+  font-size: 1em;
+  margin: 0 0 8px 0;
+  color: #555;
+  border: none;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tags .tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.88em;
+  font-weight: 500;
+  background: #e8f0fe;
+  color: #1a56db;
+  border: 1px solid #c6dbf7;
+}
+
+.skill-tags .tag.secondary {
+  background: #f3f4f6;
+  color: #555;
+  border-color: #ddd;
+}
+
+/* ===== Career Entry ===== */
+.career-entry {
+  position: relative;
+  margin-bottom: 36px;
+  padding: 20px 24px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s;
+}
+
+.career-entry:hover {
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.career-entry h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.15em;
+  color: #1a1a1a;
+  border: none;
+}
+
+.career-period {
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--theme-color);
+  background: #e8f0fe;
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.career-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 10px 0 14px;
+  font-size: 0.88em;
+  color: #666;
+}
+
+.career-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.career-meta .badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #f3f4f6;
+  font-size: 0.85em;
+}
+
+.career-entry h4 {
+  font-size: 0.95em;
+  color: #444;
+  margin: 16px 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.career-entry ul {
+  margin: 4px 0 12px;
+  padding-left: 20px;
+}
+
+.career-entry li {
+  margin-bottom: 3px;
+  font-size: 0.93em;
+  line-height: 1.65;
+  color: #333;
+}
+
+.career-entry li li {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* phases pills */
+.phases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.phases .phase {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 600px) {
+  .markdown-section {
+    padding: 12px 14px 40px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 16px;
+  }
+
+  .profile-header img {
+    width: 120px;
+  }
+
+  .profile-meta {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .career-entry {
+    padding: 16px;
+  }
+
+  .career-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* ===== Print ===== */
+@media print {
+  .career-entry {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+}
