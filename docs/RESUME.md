@@ -3,7 +3,7 @@
 <div class="profile-header">
   <img src="assets/photo.jpg" alt="Profile Photo">
   <div class="profile-info">
-    <h1>Shin DongHyuck（シンドンヒョク）</h1>
+    <h1><ruby>辛<rp>(</rp><rt>シン</rt><rp>)</rp></ruby>　<ruby>東赫<rp>(</rp><rt>ドンヒョク</rt><rp>)</rp></ruby></h1>
     <div class="profile-meta">
       <span><span class="label">最寄駅</span> 有楽町線 豊洲駅</span>
       <span><span class="label">年齢</span> 39歳</span>
@@ -109,10 +109,20 @@
 - 自動テストシナリオシステムの設計・実装
 - 自動テストのログ記録用Webサービスプラグインの実装、ログデータ設計
 - 定期的なリファクタリングと的確なコードレビュー
-- AIコードレビューのプロンプト作成・検証・メンテナンス
+- PR時にAIが差分をレビューするプロンプトの作成・検証・メンテナンス（Git連携）
 - コード品質向上のためのIDE設定管理、コード警告の通知システムを設計・実装
 - マスタデータ検証システムの設計・実装
-- プレハブのAIレビューを提案・検討中
+
+#### AI活用
+
+*ChatGPT / Gemini / Claude Code / Antigravity*
+
+- CI/CD上でAIがコードベース全体を順次読み込み・レビューし、問題箇所の修正から修正根拠を添えたPR作成までを自動で行うレビューシステムの設計
+- プレハブのAIレビューシステムの設計・導入
+- AIを活用した開発支援ツールの制作により作業生産性を大幅に向上
+  - フォントプリセット編集ツール
+  - リソース依存関係の確認ツール
+  - ゲーム内デバッグメニューツール 等
 
 #### 育成・教育
 
